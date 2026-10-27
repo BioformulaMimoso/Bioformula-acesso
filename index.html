@@ -3,100 +3,173 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#176b45">
-  <title>Biofórmula | Acesso para visitantes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Bem-vindo à Biofórmula!</title>
+  <meta
+    name="description"
+    content="Acompanhe a Agenda Semanal, dicas de saúde e muito mais no canal de informações da Biofórmula."
+  >
+
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      --verde: #347a52;
+      --verde-escuro: #245b3c;
+      --fundo: #f7faf7;
+      --texto: #26332b;
+      --texto-suave: #68756c;
+      --borda: #e3ebe4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial, sans-serif;
-      background: #f0f7f2;
-      color: #24382d;
+      padding: 24px;
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    main {
+    .pagina {
       width: 100%;
-      max-width: 430px;
-      padding: 30px 24px;
+      max-width: 460px;
+      padding: 38px 28px;
       text-align: center;
-      background: white;
-      border-radius: 22px;
-      box-shadow: 0 8px 30px #183d2815;
+      background: #ffffff;
+      border: 1px solid var(--borda);
+      border-radius: 24px;
+      box-shadow: 0 12px 36px rgba(35, 75, 48, 0.07);
     }
 
     .logo {
-      color: #176b45;
-      font-size: 28px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    h1 { font-size: 24px; margin: 16px 0 10px; }
-    p { line-height: 1.6; color: #53645a; }
-
-    .network {
-      padding: 14px;
-      background: #f0f7f2;
-      border-radius: 12px;
-      margin: 20px 0;
-    }
-
-    .button {
       display: block;
       width: 100%;
-      padding: 15px;
-      margin-top: 12px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      border: 0;
-      cursor: pointer;
+      max-width: 220px;
+      max-height: 120px;
+      object-fit: contain;
+      margin: 0 auto 28px;
     }
 
-    .primary { background: #176b45; color: white; }
-    .secondary { background: #e7f4eb; color: #176b45; }
+    h1 {
+      margin: 0 0 18px;
+      color: var(--verde-escuro);
+      font-size: clamp(27px, 6vw, 34px);
+      line-height: 1.2;
+    }
 
-    .note { font-size: 12px; margin-top: 20px; }
+    .mensagem {
+      margin: 0 auto 26px;
+      max-width: 350px;
+      color: var(--texto-suave);
+      font-size: 17px;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .destaque {
+      margin: 0 0 26px;
+      padding: 18px;
+      background: #f4f8f4;
+      border: 1px solid var(--borda);
+      border-radius: 16px;
+    }
+
+    .destaque h2 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: var(--verde-escuro);
+    }
+
+    .destaque p {
+      margin: 0;
+      color: var(--texto-suave);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .botao {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: var(--verde);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .botao:hover {
+      background: var(--verde-escuro);
+      transform: translateY(-1px);
+    }
+
+    .rodape {
+      margin: 24px 0 0;
+      color: #879188;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 380px) {
+      body {
+        padding: 14px;
+      }
+
+      .pagina {
+        padding: 30px 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main>
-    <div class="logo">Biofórmula</div>
-    <p>Seja bem-vindo!</p>
+  <main class="pagina">
 
-    <h1>Conecte-se e fique por dentro</h1>
-    <p>
-      Acesse o Wi-Fi da Biofórmula e, em seguida,
-      participe do nosso grupo no WhatsApp.
-    </p>
+    <!-- Salve a logo oficial no repositório com o nome logo.png -->
+    <img
+      class="logo"
+      src="logo.png"
+      alt="Logo oficial da Biofórmula"
+    >
 
-    <div class="network">
-      <strong>📶 Rede Wi-Fi</strong>
-      <p><strong>Bioformula Escritorio</strong></p>
-      <p>1. Abra as configurações de Wi-Fi do celular.<br>
-      2. Selecione a rede acima.<br>
-      3. Digite a senha fornecida pela equipe.</p>
-    </div>
+    <h1>Bem-vindo à Biofórmula!</h1>
 
-    <a class="button primary"
-       href="https://chat.whatsapp.com/FzCrYgelI48BLhXAsH9V2J?s=cl%26p=i%26mlu=4%26ilr=4"
-       target="_blank" rel="noopener">
+    <p class="mensagem">Já conhecia nosso canal de informações?
+Não perca tempo!
+Agenda Semanal, Dicas de Saúde e muito mais!</p>
+
+    <section class="destaque">
+      <h2>Fique por dentro!</h2>
+      <p>
+        Acompanhe nossas informações, novidades e conteúdos
+        preparados para você.
+      </p>
+    </section>
+
+    <a
+      class="botao"
+      href="https://chat.whatsapp.com/FzCrYgelI48BLhXAsH9V2J?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       Entrar no grupo do WhatsApp
     </a>
 
-    <p class="note">
-      A conexão ao Wi-Fi é realizada nas configurações
-      do seu aparelho. Se necessário, volte a esta página
-      para acessar o grupo.
+    <p class="rodape">
+      Biofórmula · Informação e cuidado com você
     </p>
+
   </main>
 </body>
 </html>
+
